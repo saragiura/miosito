@@ -1,21 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-  <title>Hello World</title>
-  <style>
-    body{
-        font-family: Arial, sans-serif;
-        background-color: #f2f2f2;
-        margin: 0;
-        padding: 0;
-    }
-    h1 {
-      color: blue;
-      font-size: 30px;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cup of sara</title>
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <h1>Hello, World!</h1>
+
+<!-- header e menu -->    
+<div class="container-fluid header">
+    <div class="row pt-4 pb-4 align-items-center">
+            <div class="col-1 justify-content-start">
+              <a href="#"><img class="logo" src="img/logo_bw.png" alt="cup of sara logo"></a>
+            </div>
+            <div class="offset-lg-8 col-lg-3 nav-wrapper d-none d-lg-block justify-content-end">
+                <ul class="nav-list">
+                      <li class="nav-item">
+                          <a href="#" class="nav-link selected"><strong>about</strong></a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#" class="nav-link"><strong>projects</strong></a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#" class="nav-link"><strong>contact</strong></a>
+                      </li>
+                </ul>
+            </div>
+    </div>
+
+<!--menu a tendina per mobile
+    <div class="mobile-nav-wrapper show d-lg-none">
+      <button class="btn btn-close mb-3">Close</button> 
+        <ul class="nav-list">
+          <li class="nav-item">
+          <a href="#" class="nav-link selected"><strong>about</strong></a>
+          </li>
+          <li class="nav-item">
+          <a href="#" class="nav-link"><strong>projects</strong></a>
+          </li>
+          <li class="nav-item">
+          <a href="#" class="nav-link"><strong>contacts</strong></a>
+          </li>
+        </ul> 
+    </div>
+</div>
+fine header e menu-->
+
+<!-- inizio prima riga -->
+<div class="container-fluid content-wrapper">
+    <div class="row prima-row align-items-center pt-4 pb-5">
+        <div class="offset-lg-1 col-lg-4 color-white order-2 order-lg-1">
+            <h1 class="font-1">sara giura</h1><h2 class="font-2 color-pink"> // cup of sara</h2><br>
+            <p>cosa succede se metti insieme una ragazza, la passione per il design e una moka piena di idee?</p>
+        </div>
+    
+      <div class="col-12 col-lg-7 d-flex justify-content-center align-items-center order-1 order-lg-2">
+        <div class="image-wrapper position-relative">
+          <div class="d-flex justify-content-center align-items-center">
+            <img src="img/foto_bicolore.jpg" alt="Sara" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- fine prima riga -->
+
+<!-- inizio seconda riga -->
+<div class="container-fluid content-wrapper">
+    <div class="row seconda-row align-items-center pt-4 pb-5">
+      <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center order-1">
+        <div class="image-wrapper position-relative">
+          <div class="d-flex justify-content-center align-items-center">
+            <img src="img/baby_sara.jpg" alt="Sara" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 order-2 pt-3">
+            <h2 class="font-2 color-pink">about me</h2><br>
+            <p>Nata in Riviera ma con animo salentino, la solarità e la convivialità di questo mix sono parte della mia esistenza. 
+            Sono Sara, ho 23 anni e frequento il corso di Design presso l’Università degli Studi di San Marino.
+            Diplomata nel 2021 in ragioneria a indirizzo relazioni internazionali per il marketing, ho lavorato per più di 2 anni in uno studio contabile della mia città.<br><div class="color-pink"><strong>E poi cos’è successo?</strong></div>
+            Le mie passioni hanno preso il comando su quello che veramente volevo fare, e così ho cambiato completamente la mia vita - da impiegata ad aspirante designer. Ho sempre amato la fotografia e la grafica e con il tempo mi sono appassionata alla comunicazione grafica, all’editoria e al brand design.</p>
+        </div>
+    </div>
+</div>
+<!-- fine seconda riga -->
+
+<!--codice javascript-->
+
+    <!--MENU A TENDINA MOBILE-->
+  <script>
+    // Seleziona gli elementi
+        const btnMenu = document.querySelector('.btn-menu');
+        const btnClose = document.querySelector('.btn-close');
+        const mobileNavWrapper = document.querySelector('.mobile-nav-wrapper');
+
+    // Apre il menu quando si clicca sul bottone menu
+        btnMenu.addEventListener('click', function() {
+        mobileNavWrapper.classList.add('show');
+        });
+
+    // Chiude il menu quando si clicca sul bottone close
+        btnClose.addEventListener('click', function() {
+        mobileNavWrapper.classList.remove('show');
+        });
+  </script>
 </body>
-</html>
