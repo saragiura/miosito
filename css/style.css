@@ -27,7 +27,8 @@ body{
     background-color: #ecf2f2;
     margin: 0;
     padding: 0;
-    height: 20opx
+    height: 200px;
+    width: 100%;
 }
 
 .logo{
