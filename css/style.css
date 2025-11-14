@@ -83,14 +83,14 @@ body{
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: #ecf;
+    background-color: #ecf2f2;
     z-index: 1000;
     padding-top: 33%;
     justify-content: center;
     align-items: flex-start;
-   /* opacity: 0;
+    opacity: 0;
     transform: translateX(100%);
-    transition: opacity 0.3s ease, transform 0.3s ease;*/
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .mobile-nav-wrapper {
@@ -100,8 +100,8 @@ body{
     height: 100%;
     width: 100%;
     background-color: #ecf2f2;
-    /*z-index: -1; /* Nascosto sotto */
-    /*opacity: 0; /* Se usi fade */
+    z-index: -1; /* Nascosto sotto */
+    opacity: 0; /* Se usi fade */
     /* AGGIUNGI QUI L'ANIMAZIONE SCELTA */
 }
 
@@ -141,6 +141,17 @@ body{
     color: #000000;
     border-bottom: none;
 }
+/* Bottone di ricerca */
+.btn-cerca{
+    background: transparent url('../img/search.svg') no-repeat center center;
+    border: none;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 0; /* Nasconde il testo del bottone */
+    margin: 3px 10px 0 0;
+}
 
 /* Bottone menu */
 .btn-menu{
@@ -168,6 +179,7 @@ body{
     top: 20px;
     right: 20px;
 }
+
 
 .prima-row{
     background-color: #000000;
