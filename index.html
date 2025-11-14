@@ -11,42 +11,45 @@
 <body>
 
 <!-- header e menu -->    
-<div class="container-fluid header">
-    <div class="row pt-4 pb-4 align-items-center">
-            <div class="col-1 justify-content-start">
-              <a href="#"><img class="logo" src="img/logo_bw.png" alt="cup of sara logo"></a>
+<div class="container-fluid">
+        <div class="row pt-4 pb-5 mb-5 align-items-center">
+            <div class="col-6 col-lg-2">
+              <a href="#"><img class="logo" src="img/logo_bw.png" alt="Logo Uffizi"></a>
             </div>
-            <div class="offset-lg-8 col-lg-3 nav-wrapper d-none d-lg-block justify-content-end">
+            <div class="col-lg-9 nav-wrapper d-none d-lg-block">
                 <ul class="nav-list">
                       <li class="nav-item">
-                          <a href="#" class="nav-link selected"><strong>about</strong></a>
+                          <a href="#" class="nav-link selected"> <strong>about</strong></a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#" class="nav-link"> <strong>projects</strong></a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#" class="nav-link"> <strong>contacts</strong></a>
+                      </li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-1 d-flex justify-content-end align-items-center">
+              <button class="btn btn-menu d-block d-lg-none">Menu</button>
+            </div>
+        </div>
+
+        <!--menu a tendina per mobile-->
+        <div class="mobile-nav-wrapper show d-lg-none">
+            <button class="btn btn-close mb-3">Close</button> 
+                <ul class="nav-list">
+                      <li class="nav-item">
+                          <a href="#" class="nav-link selected"> <strong>about</strong></a>
                       </li>
                       <li class="nav-item">
                           <a href="#" class="nav-link"><strong>projects</strong></a>
                       </li>
                       <li class="nav-item">
-                          <a href="#" class="nav-link"><strong>contact</strong></a>
+                          <a href="#" class="nav-link"> <strong>contacts</strong></a>
                       </li>
-                </ul>
-            </div>
+                </ul> 
+        </div>
     </div>
-
-<!--menu a tendina per mobile-->
-    <div class="mobile-nav-wrapper show d-lg-none">
-      <button class="btn btn-close mb-3">Close</button> 
-        <ul class="nav-list">
-          <li class="nav-item">
-          <a href="#" class="nav-link selected"><strong>about</strong></a>
-          </li>
-          <li class="nav-item">
-          <a href="#" class="nav-link"><strong>projects</strong></a>
-          </li>
-          <li class="nav-item">
-          <a href="#" class="nav-link"><strong>contacts</strong></a>
-          </li>
-        </ul> 
-    </div>
-</div>
 <!--fine header e menu-->
 
 <!-- inizio prima riga -->
@@ -91,8 +94,8 @@
 
 <!--codice javascript-->
 
-    <!--MENU A TENDINA MOBILE-->
-  <script>
+    <!-- qui si inserisce il codice JavaScript -->
+     <script>
     // Seleziona gli elementi
         const btnMenu = document.querySelector('.btn-menu');
         const btnClose = document.querySelector('.btn-close');
@@ -107,5 +110,5 @@
         btnClose.addEventListener('click', function() {
         mobileNavWrapper.classList.remove('show');
         });
-  </script>
+     </script>
 </body>
