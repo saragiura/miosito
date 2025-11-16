@@ -22,6 +22,10 @@ html body{
     font-size: 20px;
 }
 
+.font-3{
+    font-size: 40px;
+}
+
 /* impostazioni header */
 .header{
     background-color: #ecf2f2;
@@ -140,17 +144,10 @@ html body{
     color: #000000;
     border-bottom: none;
 }
-/* Bottone di ricerca */
-/*.btn-cerca{
-    background: transparent url('../img/search.svg') no-repeat center center;
-    border: none;
-    padding: 0;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    font-size: 0; /* Nasconde il testo del bottone 
-    margin: 3px 10px 0 0;
-}*/
+
+html {
+    scroll-behavior: smooth;
+}
 
 /* Bottone menu */
 .btn-menu{
@@ -200,3 +197,43 @@ html body{
   object-fit: cover;
 }
 
+/* impostazioni freccia progetti */
+.arrow {
+    max-width: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.arrow:hover {
+    opacity: 0.7;
+}
+
+/* Ruota la freccia quando è aperta */
+.arrow.open {
+    transform: rotate(-90deg);
+}
+
+/* Contenuto dei progetti nascosto di default */
+.project-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    margin-left: 23px; /* Allinea con il testo */
+}
+
+.project-content.show {
+    max-height: 1000px;
+}
+
+/* Allinea il testo a sinistra */
+.project-content p {
+    text-align: left;
+}
+
+/* Responsive: su mobile centra anche il contenuto */
+@media (max-width: 991px) {
+    .project-content {
+        margin-left: 0;
+        text-align: center;
+    }
+}
